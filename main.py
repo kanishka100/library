@@ -2,13 +2,6 @@ from flask import Flask, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.utils import redirect
 
-""" creating sqlite database,this database comes with python """
-# db = sqlite3.connect("books-collection.db")
-# cursor = db.cursor()
-# # cursor.execute(
-# #     "CREATE TABLE books(id INTEGER PRIMARY KEY, title varchar(250) NOT NULL UNIQUE,author varchar(250) NOT NULL,rating FLOAT NOT NULL)")
-# cursor.execute("INSERT INTO books VALUES(1,'Harry Potter','J.J. Rowling','9.3')")
-# db.commit()
 
 
 app = Flask(__name__)
